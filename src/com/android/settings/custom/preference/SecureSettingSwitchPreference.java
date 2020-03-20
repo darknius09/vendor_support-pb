@@ -18,7 +18,6 @@
 package com.android.settings.custom.preference;
 
 import android.content.Context;
-import androidx.preference.SwitchPreference;
 import android.util.AttributeSet;
 
 public class SecureSettingSwitchPreference extends SwitchPreference {
