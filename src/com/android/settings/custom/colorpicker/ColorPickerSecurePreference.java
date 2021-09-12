@@ -28,15 +28,18 @@ public class ColorPickerSecurePreference extends ColorPickerPreference {
     public ColorPickerSecurePreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         setPreferenceDataStore(new SecureSettingsStore(context.getContentResolver()));
+        setIconSpaceReserved(false);
     }
 
     public ColorPickerSecurePreference(Context context, AttributeSet attrs) {
         super(context, attrs);
         setPreferenceDataStore(new SecureSettingsStore(context.getContentResolver()));
+        setIconSpaceReserved(false);
     }
 
     public ColorPickerSecurePreference(Context context) {
         super(context, null);
         setPreferenceDataStore(new SecureSettingsStore(context.getContentResolver()));
+        setIconSpaceReserved(false);
     }
 }

@@ -28,15 +28,18 @@ public class ColorPickerSystemPreference extends ColorPickerPreference {
     public ColorPickerSystemPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         setPreferenceDataStore(new SystemSettingsStore(context.getContentResolver()));
+        setIconSpaceReserved(false);
     }
 
     public ColorPickerSystemPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
         setPreferenceDataStore(new SystemSettingsStore(context.getContentResolver()));
+        setIconSpaceReserved(false);
     }
 
     public ColorPickerSystemPreference(Context context) {
         super(context, null);
         setPreferenceDataStore(new SystemSettingsStore(context.getContentResolver()));
+        setIconSpaceReserved(false);
     }
 }
